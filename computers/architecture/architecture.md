@@ -22,7 +22,7 @@ delivery mechanism. Has no notion of details that are hosted in the delivery
 mechanism. Only operates over data.
 
 ### message bus
-Ties the `boundries` to the `entities` without hard linking them. Generally
+Ties the `boundaries` to the `entities` without hard linking them. Generally
 just a function that makes sure the right `entity` is called.
 
 ### entities
@@ -177,7 +177,7 @@ The flow would be as follows
   `development`
 - whenever a merge happens on `development` trigger a `build`
 - in the scripts if branch is `development`, trigger `a docker build`
-- each succesful `docker build` triggers a `deploy`
+- each successful `docker build` triggers a `deploy`
 
 There's a clear infrastructure requirement here:
 - a git host like GitHub that can host code, keep branches and call webhooks
